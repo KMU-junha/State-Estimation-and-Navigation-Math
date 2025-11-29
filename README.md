@@ -14,11 +14,20 @@
 
 ### 📝 Mathematical Formulation
 1.  **Prediction (예측):**
-    $$\hat{x}_{k|k-1} = A \hat{x}_{k-1|k-1} + B u_k$$
-    $$P_{k|k-1} = A P_{k-1|k-1} A^T + Q$$
+    $$
+    \hat{x}_{k|k-1} = A \hat{x}_{k-1|k-1} + B u_k
+    $$
+    $$
+    P_{k|k-1} = A P_{k-1|k-1} A^T + Q
+    $$
+
 2.  **Update (보정):**
-    $$K_k = P_{k|k-1} H^T (H P_{k|k-1} H^T + R)^{-1}$$
-    $$\hat{x}_{k|k} = \hat{x}_{k|k-1} + K_k (z_k - H \hat{x}_{k|k-1})$$
+    $$
+    K_k = P_{k|k-1} H^T (H P_{k|k-1} H^T + R)^{-1}
+    $$
+    $$
+    \hat{x}_{k|k} = \hat{x}_{k|k-1} + K_k (z_k - H \hat{x}_{k|k-1})
+    $$
 
 ### 💻 Implementation (`kalman_demo.py`)
 * Python `numpy`를 사용하여 1차원 신호의 노이즈 제거 시뮬레이션 구현.

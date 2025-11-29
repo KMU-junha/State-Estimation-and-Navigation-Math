@@ -13,6 +13,7 @@
 * **TDOA 프로젝트 적용:** 마이크 센서의 노이즈를 제거하고 이동하는 음원의 궤적을 부드럽게 추적하는 데 활용.
 
 ### 📝 Mathematical Formulation
+
 1.  **Prediction (예측):**
     $$
     \hat{x}_{k|k-1} = A \hat{x}_{k-1|k-1} + B u_k
